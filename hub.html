@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -12,12 +12,16 @@
 <body>
 
     <main class="hub">
+        
+        <div class="nav-bar">
+            <button id="backBtn">← 뒤로가기</button>
+        </div>
 
-        <h1> 메인창</h1>
+        <h1>메인창</h1>
 
         <p class="desc">
-            고전컴퓨터와 양자컴퓨터의 연산을 각각 또는 비교해서 확인해보세요!
-          <br>중간에 오타나 오류는 못본척★
+            고전컴퓨터와 양자컴퓨터의 연산을 각각 확인해보세요!
+            <br>중간에 오타나 오류는 못본척하기★
         </p>
 
         <section class="cards">
@@ -27,20 +31,20 @@
                 <p>AND, OR, NOT, XOR 기반 순차 연산</p>
             </a>
 
-            <a class="card" href="q.html">
+            <a class="card" href="quantum.html">
                 <h2>양자컴퓨터</h2>
                 <p>중첩과 얽힘 기반 동시 연산</p>
-            </a>
-
-            <a class="card compare" href="compare.html">
-                <h2>비교 보기</h2>
-                <p>두 연산 구조를 동시에 비교</p>
             </a>
 
         </section>
 
     </main>
 
+    <script>
+        document.getElementById("backBtn").addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    </script>
 </body>
 
 </html>
