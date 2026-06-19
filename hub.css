@@ -1,0 +1,137 @@
+/* =========================
+   기본 설정
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(120,190,255,.15), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(160,210,255,.12), transparent 45%),
+        linear-gradient(rgba(180,190,210,.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(180,190,210,.12) 1px, transparent 1px);
+
+    background-size:
+        auto,
+        auto,
+        40px 40px,
+        40px 40px;
+}
+
+/* =========================
+   전체 레이아웃
+========================= */
+
+.hub {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 1100px;
+}
+
+/* =========================
+   제목
+========================= */
+
+.hub h1 {
+    font-size: 2.2rem;
+    color: #22374d;
+    margin-bottom: 14px;
+}
+
+.desc {
+    font-size: 1rem;
+    color: #6b7d91;
+    margin-bottom: 50px;
+    line-height: 1.7;
+}
+
+/* =========================
+   카드 영역
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* =========================
+   카드 스타일
+========================= */
+
+.card {
+    text-decoration: none;
+
+    background: rgba(255,255,255,0.65);
+    border: 1px solid rgba(180,210,240,0.5);
+
+    border-radius: 20px;
+
+    padding: 40px 25px;
+
+    color: #2c3e50;
+
+    backdrop-filter: blur(16px);
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 25px rgba(120,170,220,0.08);
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #2b5c9a;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #5d6f82;
+    line-height: 1.6;
+}
+
+/* =========================
+   hover 효과
+========================= */
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(100,150,220,0.18);
+    border-color: rgba(120,180,255,0.7);
+}
+
+/* =========================
+   비교 카드 강조
+========================= */
+
+.card.compare {
+    border: 2px solid rgba(80,140,220,0.6);
+}
+
+/* =========================
+   반응형
+========================= */
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hub h1 {
+        font-size: 1.8rem;
+    }
+}
