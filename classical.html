@@ -1,0 +1,60 @@
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고전컴퓨터 시각화</title>
+
+<link rel="stylesheet" href="classical.css">
+  
+<script src="classical.js"></script>
+</head>
+
+<body>
+
+<main class="wrap">
+
+    <header class="header">
+        <div class="title-row">
+            <h1>고전컴퓨터 연산 시각화</h1>
+            <button id="runBtn">▶ 실행</button>
+          <button id="backBtn">← 뒤로</button>
+       
+          
+        </div>
+        <p>AND → OR → NOT → XOR 순차 연산</p>
+    </header>
+
+    <section class="panel">
+
+        <!-- 회로 -->
+        <div class="circuit" id="circuit"></div>
+
+        <!-- 설명 패널 -->
+        <div class="side-info">
+
+            <div class="block">
+                <h3>현재 상태</h3>
+                <div id="state">대기 중</div>
+            </div>
+
+            <div class="block">
+                <h3>설명</h3>
+                <div id="desc">실행하면 설명이 표시됩니다</div>
+            </div>
+
+            <div class="block">
+                <h3>입력값 (4bit)</h3>
+                <input id="inputValue" maxlength="4" placeholder="1010">
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+</body>
+
+</html>
