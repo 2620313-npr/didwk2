@@ -38,8 +38,36 @@ body {
 
 .hub {
     text-align: center;
-    padding: 60px 20px;
-    max-width: 1100px;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 800px; /* 2개 카드 정렬에 알맞게 가로폭 소폭 최적화 */
+}
+
+/* =========================
+   네비게이션 & 뒤로가기 버튼
+========================= */
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+#backBtn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 999px;
+    background: rgba(120, 160, 200, 0.15);
+    color: #2b5c9a;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#backBtn:hover {
+    background: rgba(120, 160, 200, 0.25);
+    transform: translateY(-2px);
 }
 
 /* =========================
@@ -55,17 +83,17 @@ body {
 .desc {
     font-size: 1rem;
     color: #6b7d91;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     line-height: 1.7;
 }
 
 /* =========================
-   카드 영역
+   카드 영역 (3개에서 2개로 변경)
 ========================= */
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
@@ -115,18 +143,10 @@ body {
 }
 
 /* =========================
-   비교 카드 강조
-========================= */
-
-.card.compare {
-    border: 2px solid rgba(80,140,220,0.6);
-}
-
-/* =========================
    반응형
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .cards {
         grid-template-columns: 1fr;
     }
