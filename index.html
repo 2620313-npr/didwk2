@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고전컴퓨터의 연산과 양자컴퓨터의 연산 시각화</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 첫 화면 -->
+    <main class="page">
+
+        <h1>고전컴퓨터의 연산과 양자컴퓨터의 연산 시각화</h1>
+
+        <p class="author">20313 우승연</p>
+
+        <p class="subtitle">
+            비트와 큐비트는 어떻게 정보를 계산할까?<br>
+            같은 문제를 해결하는 두 컴퓨터의 연산 과정을<br>
+            직관적으로 시각화하여 비교합니다.
+        </p>
+
+        <!-- 배경 심볼 -->
+        <div class="background-symbols">
+            <span>0</span>
+            <span>1</span>
+            <span>|0⟩</span>
+            <span>|1⟩</span>
+            <span>H</span>
+            <span>CNOT</span>
+            <span>AND</span>
+            <span>OR</span>
+            <span>NOT</span>
+            <span>XOR</span>
+            <span>Measure</span>
+            <span>ψ</span>
+        </div>
+
+        <!-- 스크롤 안내 -->
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 두 번째 패널 -->
+    <section class="info-panel">
+
+        <div class="card">
+
+            <h2>고전컴퓨터</h2>
+
+            <p>
+                고전컴퓨터의 연산은 <strong>비트(Bit)</strong>를 사용하여 정보를 처리한다.
+            </p>
+
+            <p>
+                이 비트(0, 1)를 이용하여
+                <strong>AND, OR, NOT, XOR</strong>
+                연산을 수행하며 데이터를 처리한다.
+            </p>
+
+            <p>
+                이때 연산은 <strong>순차적으로</strong> 이루어진다.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>양자컴퓨터</h2>
+
+            <p>
+                양자컴퓨터는 <strong>큐비트(Qubit)</strong>를 사용하여 정보를 처리한다.
+            </p>
+
+            <p>
+                큐비트는 고전 비트와 달리
+                <strong>중첩(Superposition)</strong>과
+                <strong>얽힘(Entanglement)</strong>이라는
+                양자 현상을 가진다.
+            </p>
+
+            <p>
+                큐비트가 가질 수 있는 상태는
+                <strong>0</strong>,
+                <strong>1</strong>,
+                <strong>중첩 상태</strong>,
+                <strong>얽힘 상태</strong>이다.
+            </p>
+
+            <p>
+                큐비트를 이용한 연산은
+                <strong>동시다발적인 계산</strong>이 가능하다.
+            </p>
+
+        </div>
+
+    </section>
+  
+  <div class="next-page">
+    <a href="hub.html" class="next-btn">
+        다음 →
+    </a>
+</div>
+
+</body>
+</html>
